@@ -1,0 +1,44 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.title {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    background-image: linear-gradient(to right, #C51A2D, #86040E, #440204);
+    -webkit-background-clip: text;
+    color: transparent;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+.donationTypes {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.donationCard {
+    flex: 1;
+    min-width: 280px;
+    max-width: 360px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+    .donationTypes {
+        justify-content: center;
+    }
+
+    .donationCard {
+        width: 100%;
+        max-width: 400px;
+    }
+}

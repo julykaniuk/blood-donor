@@ -1,0 +1,168 @@
+.statsContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.stat {
+    text-align: center;
+    margin: 0 20px;
+}
+
+.number {
+    font-size: 48px;
+    font-weight: bold;
+    color: #C51A2D;
+}
+
+.description {
+    font-size: 24px;
+    color: #000000;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 1089px) {
+    .statsContainer {
+        padding: 15px;
+    }
+
+    .stat {
+        margin: 0 15px;
+    }
+
+    .number {
+        font-size: 40px;
+    }
+
+    .description {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .statsContainer {
+        padding: 10px;
+    }
+
+    .stat {
+        margin: 0 10px;
+    }
+
+    .number {
+        font-size: 36px;
+    }
+
+    .description {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .statsContainer {
+        flex-direction: column;
+        padding: 8px;
+        width: 100%;
+        align-items: center;
+    }
+
+    .stat {
+        margin-bottom: 15px;
+    }
+
+    .number {
+        font-size: 32px;
+        margin-top: 8px;
+    }
+
+    .description {
+        font-size: 16px;
+    }
+}
+
+.statsContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.stat {
+    text-align: center;
+    margin: 0 20px;
+}
+
+.number {
+    font-size: 48px;
+    font-weight: bold;
+    color: #C51A2D;
+}
+
+.description {
+    font-size: 24px;
+    color: #000000;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 1089px) {
+    .statsContainer {
+        padding: 15px;
+    }
+
+    .stat {
+        margin: 0 15px;
+    }
+
+    .number {
+        font-size: 40px;
+    }
+
+    .description {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .statsContainer {
+        padding: 10px;
+    }
+
+    .stat {
+        margin: 0 10px;
+    }
+
+    .number {
+        font-size: 36px;
+    }
+
+    .description {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .statsContainer {
+        flex-direction: column;
+        padding: 8px;
+        align-items: center;
+    }
+
+    .stat {
+        margin-bottom: 15px;
+    }
+
+    .number {
+        font-size: 32px;
+        margin-top: 8px;
+    }
+
+    .description {
+        font-size: 16px;
+    }
+}

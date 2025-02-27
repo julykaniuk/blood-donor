@@ -1,0 +1,30 @@
+.section4 {
+    padding: 20px;
+}
+
+.content4 {
+    text-align: center;
+}
+
+.title_c {
+    font-size: 5rem;
+    margin-bottom: 20px;
+    background-image: linear-gradient(to right, #C51A2D, #86040E, #440204);
+    -webkit-background-clip: text;
+    color: transparent;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+.image {
+    width: 90%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 480px) {
+    .title_c {
+        font-size: 2rem;
+        text-align: center;
+    }
+}
