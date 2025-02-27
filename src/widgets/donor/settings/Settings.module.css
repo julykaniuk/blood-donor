@@ -1,0 +1,250 @@
+
+.page {
+    margin-left: 40px;
+}
+
+
+.back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    z-index: -1;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    z-index: 1;
+}
+
+.profile1 {
+    background: white;
+    padding: 12px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    width: 400px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.profile2 {
+    background: white;
+    padding: 12px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.avatar {
+    width: 116px;
+    height: 116px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.infoBox {
+    padding: 4px 8px;
+    text-align: left;
+    border-radius: 10px;
+    border: 2px solid #b5b1b1;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.infoBox strong {
+    display: block;
+    color: #888;
+    font-size: 12px;
+}
+
+.infoBox ul {
+    margin-top: 0;
+    padding-left: 20px;
+}
+
+.infoBox ul li {
+    font-weight: bold;
+}
+
+.tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.tabBtn {
+    padding: 10px 20px;
+    background: none;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+.tabBtn.active {
+    color: #000000;
+}
+
+.tabBtn.active::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #d50000;
+    margin-top: 5px;
+}
+
+.tabContent {
+    display: none;
+    height: 450px;
+    overflow-y: auto;
+}
+
+.tabContent.active {
+    display: grid;
+    gap: 20px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.formSettings {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Дві рівні колонки */
+    gap: 20px;
+}
+form label {
+    display: block;
+    font-weight: bold;
+    margin-top: 4px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"] {
+    width: 100%;
+    padding: 4px;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 16px;
+}
+.passwordContainer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.passwordContainer input {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    outline: none;
+    background: transparent;
+}
+
+.passwordContainer button {
+    padding: 5px 10px;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+}
+
+.passwordContainer button:hover {
+    background-color: #f0f0f0;
+}
+
+input[type="checkbox"] {
+    accent-color: #d50000;
+}
+
+input[type="checkbox"]:hover {
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    form {
+        grid-template-columns: 1fr;
+    }
+}
+
+select {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 10px;
+    background: white;
+    outline: none;
+    cursor: pointer;
+    border: none;
+}
+
+
+select option {
+    background: white;
+    color: #333;
+    font-size: 16px;
+}
+
+select:focus-visible {
+    outline: none;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .profile1, .profile2 {
+        width: 100%;
+        max-width: 90%;
+    }
+
+    .column {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .tabs {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tabBtn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .tabContent.active {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        overflow: visible;
+        height: auto;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+}

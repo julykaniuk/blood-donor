@@ -1,0 +1,144 @@
+.container {
+    margin-top: 54px;
+    margin-left: 150px;
+}
+
+.back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    z-index: -1;
+}
+
+.title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    background-color: #f8f8f8;
+    border: 1px solid #bfc0c6;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 10px 0 0 10px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.dateSection,
+.donationType {
+    width: 50%;
+    background: #f9f9f9;
+    padding: 24px;
+    border-radius: 8px;
+}
+
+.titleDate {
+    font-size: 24px;
+    color: #86040E;
+    margin-bottom: 10px;
+}
+
+.times {
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-top: 14px;
+}
+
+.timeSlot {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 14px;
+    font-weight: bold;
+}
+
+label {
+    margin-right: 15px;
+    line-height: 32px;
+}
+
+input[type="checkbox"] {
+    accent-color: #d50000;
+}
+
+input[type="checkbox"]:hover {
+    cursor: pointer;
+}
+
+input[type="radio"] {
+    accent-color: #d50000;
+}
+
+input[type="radio"]:hover {
+    cursor: pointer;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 5px;
+}
+
+.info {
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 24px;
+}
+
+@media (max-width: 1024px) {
+    .container {
+        margin-left: 100px;
+        margin-right: 20px;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+    .dateSection,
+    .donationType {
+        width: 100%;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+
+    .titleDate {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .title {
+        font-size: 18px;
+    }
+
+    .titleDate {
+        font-size: 18px;
+    }
+
+    .info {
+        font-size: 14px;
+    }
+
+    .dateSection,
+    .donationType {
+        padding: 16px;
+    }
+
+    label {
+        line-height: 24px;
+    }
+}

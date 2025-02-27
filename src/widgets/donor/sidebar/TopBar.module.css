@@ -1,0 +1,47 @@
+
+.topBar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #F1F2F6;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-right: 32px;
+}
+
+.profilePhoto {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.logoutButton {
+    display: none;
+    padding: 5px 10px;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.profile:hover .logoutButton {
+    display: block;
+}
+
+.support {
+    font-weight: bold;
+    color: #86040E;
+    margin-right: 24px;
+}
