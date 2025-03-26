@@ -1,4 +1,4 @@
-.sidebar {
+.donorSidebar {
     width: 80px;
     height: 100vh;
     background-color: #f9f9f9;
@@ -14,7 +14,7 @@
     z-index: 100;
 }
 
-.sidebar:hover {
+.donorSidebar:hover {
     width: 300px;
 }
 
@@ -33,15 +33,15 @@
     width: 100%;
 }
 
-.sidebar:hover .logoExpanded {
+.donorSidebar:hover .logoExpanded {
     display: block;
 }
 
-.sidebar:hover .logoCollapsed {
+.donorSidebar:hover .logoCollapsed {
     display: none;
 }
 
-.menuItem {
+.donorItem {
     width: 100px;
     height: 100px;
     margin: 52px 0;
@@ -83,38 +83,38 @@
     font-weight: bold;
 }
 
-.sidebar:hover .text {
+.donorSidebar:hover .text {
     display: block;
 }
 
-.menuItem.active {
+.donorItem.active {
     background-color: #86040e;
     color: #fff;
     border-color: transparent;
 }
 
-.menuItem.active .icon {
+.donorItem.active .icon {
     background-color: rgba(214, 113, 133, 0.55);
 }
 
-.menuItem.active .icon img {
+.donorItem.active .icon img {
     filter: brightness(0) invert(1);
 }
 
-.menuItem:hover:not(.active) {
+.donorItem:hover:not(.active) {
     background-color: #86040e;
     color: #fff;
 }
 
-.menuItem:hover:not(.active) .icon {
+.donorItem:hover:not(.active) .icon {
     background-color: rgba(214, 113, 133, 0.55);
 }
 
-.menuItem:hover:not(.active) .icon img {
+.donorItem:hover:not(.active) .icon img {
     filter: brightness(0) invert(1);
 }
 
-.sidebar:not(:hover) .menuItem {
+.donorSidebar:not(:hover) .donorItem {
     width: 65px;
     height: 65px;
     padding: 4px;
@@ -122,11 +122,12 @@
     justify-content: center;
 }
 
-.sidebar:not(:hover) .menuItem .text {
+.donorSidebar:not(:hover) .donorItem .text {
     display: none;
+    text-align: center;
 }
 
-.menuItem.active::after {
+.donorItem.active::after {
     content: '';
     position: absolute;
     right: -10px;
@@ -139,7 +140,7 @@
 
 }
 
-.sidebar:not(:hover) .menuItem.active::after {
+.donorSidebar:not(:hover) .donorItem.active::after {
     content: '';
     position: absolute;
     right: -5px;
@@ -171,7 +172,7 @@
         display: none;
     }
 
-    .sidebar {
+    .donorSidebar {
         width: 0;
         position: fixed;
         top: 0;
@@ -184,15 +185,15 @@
         align-items: center;
     }
 
-    .sidebar.open {
+    .donorSidebar.open {
         width: 250px;
     }
 
-    .menuItem {
+    .donorItem {
         display: none;
     }
 
-    .sidebar.open .menuItem {
+    .donorSidebar.open .donorItem {
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -203,7 +204,7 @@
         text-align: center;
     }
 
-    .sidebar.open .menuItem .text {
+    .donorSidebar.open .donorItem .text {
         display: block;
         margin-left: 12px;
     }

@@ -1,11 +1,15 @@
 
-import HomePage from "./pages/public-access/HomePage.jsx";
+import PublicRoutes from "./app/routes/PublicRoutes.jsx";
+import AdminRoutes from "./app/routes/AdminRoutes.jsx";
+import DonorPoutes from "./app/routes/DonorPoutes.jsx";
 
 function App() {
 
   return (
     <>
-<HomePage/>
+        <PublicRoutes />
+        <AdminRoutes/>
+        <DonorPoutes/>
     </>
   )
 }

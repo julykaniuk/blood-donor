@@ -2,7 +2,7 @@ import styles from './ArticleWhy.module.css';
 import Card from '../../../shared/ui/card/Card.jsx';
 import ArticleWhy1 from '../../../shared/assets/images/ArticleWhy1.png';
 import ArticleWhy2 from '../../../shared/assets/images/ArticleWhy2.png';
-import ArticleWhy3 from '../../../shared/assets/images/ArticleWhy2.png';
+import ArticleWhy3 from '../../../shared/assets/images/ArticleWhy3.png';
 
 const ArticleWhy = () => {
     return (
@@ -63,17 +63,18 @@ const ArticleWhy = () => {
                     image={ArticleWhy1}
                     title="Групи крові"
                     description="Ваші еритроцити, тромбоцити та плазма можуть врятувати до трьох життів"
+                    link="/article"
                 />
                 <Card
                     image={ArticleWhy2}
                     title="Попит на кров"
                     description="Дізнайтеся про фактори, які впливають на те, скільки кожної групи крові нам потрібно зібрати"
-                />
+                    link="/demand" />
                 <Card
                     image={ArticleWhy3}
                     title="Як використовується кров"
                     description="Ваші еритроцити, тромбоцити та плазма можуть врятувати до трьох життів"
-                />
+                    link="/using" />
             </div>
         </div>
     );

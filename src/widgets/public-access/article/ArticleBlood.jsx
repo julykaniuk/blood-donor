@@ -10,6 +10,7 @@ import ABp from '../../../shared/assets/images/AB+.png';
 import ABn from '../../../shared/assets/images/AB-.png';
 
 const ArticleBlood = () => {
+
     return (
         <div className={styles.container}>
             <h1 className={styles.title}>Групи крові</h1>
@@ -95,41 +96,49 @@ const ArticleBlood = () => {
                     image={Op}
                     title="O+"
                     description="Перша позитивна — найпоширеніша група крові"
+                    link="/article/0-positive"
                 />
                 <Card
                     image={On}
                     title="O-"
                     description="З першою негативною  донорів часто називають «універсальними донорами»."
+                    link="/article/0-negative"
                 />
                 <Card
                     image={Ap}
                     title="A+"
                     description="Друга позитивна група крові є другою за поширеністю"
+                    link="/article/A-positive"
                 />
                 <Card
                     image={An}
                     title="A-"
                     description="Друга негативна – універсальний тромбоцитарний тип"
+                    link="/article/A-negative"
                 />
                 <Card
                     image={Bp}
                     title="B+"
                     description="Лише 8% донорів мають третю позитивну кров."
+                    link="/article/B-positive"
                 />
                 <Card
                     image={Bn}
                     title="B-"
                     description="Лише 2% донорів є третьою негативними, що робить групу крові однією з найрідкісніших"
+                    link="/article/B-negative"
                 />
                 <Card
                     image={ABp}
                     title="AB+"
                     description="Близько 2% донорів мають четверту позитивну кров"
+                    link="/article/AB-positive"
                 />
                 <Card
                     image={ABn}
                     title="AB-"
                     description="Найрідкісніша група крові, на яку припадає лише 1% наших донорів крові."
+                    link="/article/AB-negative"
                 />
             </div>
         </div>

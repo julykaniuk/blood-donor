@@ -4,6 +4,7 @@ import "react-calendar/dist/Calendar.css";
 import styles from "./Calendar1.module.css";
 import settingsBack from "../../../shared/assets/images/backroundset.png";
 import Button from "../../../shared/ui/button/Button.jsx";
+import {Link} from "react-router-dom";
 
 const Calendar1 = () => {
     const [date, setDate] = useState(new Date());
@@ -34,10 +35,11 @@ const Calendar1 = () => {
                     tileClassName={tileClassName}
                 />
             </div>
-
+<Link to={"/donor/calendar1"}>
             <Button  onClick={() => console.log('Кнопка натиснута!')}>
                 Обрати дату
             </Button>
+</Link>
         </div>
     );
 };

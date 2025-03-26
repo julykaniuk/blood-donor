@@ -60,6 +60,7 @@ const Home = () => {
                         <h2 className={styles.advertisementTitle}>Оголошення</h2>
                         <p className={styles.advertisementInfo}>Потрібні такі групи крові II-</p>
                     </div>
+
                 </div>
 
                 <div className={styles.rightColumn}>

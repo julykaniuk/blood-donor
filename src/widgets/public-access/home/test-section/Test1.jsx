@@ -1,8 +1,7 @@
 import styles from "./Test1.module.css";
 import Button from "../../../../shared/ui/button/Button.jsx";
 import { useState } from "react";
-import {questions} from "./questions.jsx";
-
+import { questions } from "./questions.jsx";
 
 const Test1 = () => {
     const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -36,13 +35,22 @@ const Test1 = () => {
             setCurrentQuestion(currentQuestion - 1);
             setAnswer("");
         } else {
-            setHasStarted(false);
-            setCurrentQuestion(0);
+            resetTest();
         }
     };
 
     const handleStartTest = () => {
         setHasStarted(true);
+    };
+
+    const resetTest = () => {
+        setHasStarted(false);
+        setCurrentQuestion(0);
+        setAnswer("");
+        setShowResult(false);
+        setResult("");
+        setMessage("");
+        setIsComplete(false);
     };
 
     if (isComplete) {
@@ -59,7 +67,7 @@ const Test1 = () => {
                         Якщо у вас виникли інші запитання, перегляньте наші вказівки щодо здоров’я та відповідності вимогам
                         або зателефонуйте нам за номером 0300 123 23 23.
                     </p>
-                    <Button onClick={() => window.location.reload()}>Перейти на головну сторінку</Button>
+                    <Button onClick={resetTest}>Почати знову</Button>
                 </div>
             </div>
         );
@@ -73,7 +81,7 @@ const Test1 = () => {
                     <p className={styles.resultMessage}>
                         {message}
                     </p>
-                    <Button onClick={() => window.location.reload()}>Почати знову</Button>
+                    <Button onClick={resetTest}>Почати знову</Button>
                 </div>
             </div>
         );

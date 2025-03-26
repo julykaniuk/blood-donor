@@ -1,41 +1,40 @@
 
 import styles from './footer.module.css';
 import Logo from '../../../shared/assets/icons/lodo_white.svg';
+import {Link} from "react-router-dom";
 
 const Footer = () => {
     return (
         <footer className={styles.footer}>
             <div className={styles.footerContainer}>
                 <div className={styles.footerLogo}>
-                    <a href="#" className="nav__logo">
+                    <Link to="/" className="nav__logo">
                         <img src={Logo} alt='BloodHero Logo'/>
-                    </a>
+                    </Link>
                     <p className={styles.d}>
                         Донорство — це не просто акт допомоги, це можливість подарувати
                         другому життя, яке він не може отримати без вашої допомоги.
                     </p>
                 </div>
                 <div className={styles.footerColumn}>
-                    <h3>Про нас</h3>
+                    <h3><Link to="/about_us">Про нас</Link></h3>
                     <ul>
-                        <li><a href="#">Контакти</a></li>
-                        <li><a href="#">Часті питання</a></li>
+                        <li><Link to="/article_place">Контакти</Link></li>
+                        <li><Link to="faq/">Часті питання</Link></li>
                     </ul>
                 </div>
                 <div className={styles.footerColumn}>
-                    <h3>Навіщо здавати кров?</h3>
+                    <h3><Link to="/why">Навіщо здавати кров?</Link></h3>
                     <ul>
-                        <li><a href="#">Групи крові</a></li>
-                        <li><a href="#">Попит на різні групи крові</a></li>
-                        <li><a href="#">Типи донації</a></li>
-                        <li><a href="#">Вперше здають кров</a></li>
-                        <li><a href="#">Кому ви допомагаєте</a></li>
+                        <li><Link to="/article">Групи крові</Link></li>
+                        <li><Link to="/demand">Попит на різні групи крові</Link></li>
+                        <li><Link to="/using">Кому ви допомагаєте</Link></li>
                     </ul>
                 </div>
                 <div className={styles.footerColumn}>
-                    <h3>Де здати кров?</h3>
+                    <h3><Link to="/article_place">Де здати кров?</Link></h3>
                     <ul>
-                        <li><a href="#">Потрібні донори?</a></li>
+                        <li><Link to="/need_donors">Потрібні донори?</Link></li>
                     </ul>
                 </div>
             </div>

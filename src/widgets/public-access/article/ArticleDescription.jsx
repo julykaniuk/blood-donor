@@ -1,9 +1,14 @@
 import styles from './ArticleDescription.module.css';
-import mainImage from '../../../shared/assets/images/0+.png';
-import geneticsImage from '../../../shared/assets/images/blood.png';
+import {articles} from "./articles.jsx";
+import {useParams} from "react-router-dom";
 
 const ArticleDescription = () => {
+    const { id } = useParams();
+    const article = articles.find((item) => item.id === id);
 
+    if (!article) {
+        return <h2>Групу крові не знайдено</h2>;
+    }
     const scrollToSection = (sectionId) => {
         const section = document.getElementById(sectionId);
         if (section) {
@@ -16,16 +21,6 @@ const ArticleDescription = () => {
                 behavior: 'smooth'
             });
         }
-    };
-
-    const article = {
-        name: "Група крові ",
-        overview: "текст текст",
-        description: "текс текст",
-        frequency: "текс текст",
-        compatibility: "текс текст",
-        part: "текс текст",
-        genetics: "текс текст",
     };
 
     return (
@@ -55,7 +50,15 @@ const ArticleDescription = () => {
             </aside>
             <main className={styles.content}>
                 <h1>{article.name}</h1>
-                <img src={mainImage} alt="Character Image" className={styles.mainImage}/>
+                <img
+                    src={article.mainImage}
+                    alt="Main Image"
+                    className={styles.mainImage}
+                />
+                <p className={styles.notes}> Ваша група крові визначається генами, успадкованими від батьків. Незалежно
+                    від того, чи ваша група
+                    крові рідкісна, поширена чи десь середня, ваші пожертви життєво важливі для порятунку та покращення
+                    життя.</p>
 
                 <section id="overview">
                     <h2>Вступ</h2>
@@ -81,8 +84,11 @@ const ArticleDescription = () => {
                     <h2>Генетичні аспекти</h2>
                     <p>{article.genetics}</p>
                 </section>
-                <img src={geneticsImage} alt="Character Image" className={styles.geneticsImage}/>
-
+                <img
+                    src={article.geneticsImage}
+                    alt="Genetics Image"
+                    className={styles.geneticsImage}
+                />
             </main>
         </div>
     );

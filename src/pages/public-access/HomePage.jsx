@@ -17,7 +17,7 @@ function HomePage() {
             <MainPage/>
             <Statistics/>
             <Why/>
-            <Test1/>
+            <Test1  />
             <FirstTime/>
             <DonationSection/>
             <FAQSection/>

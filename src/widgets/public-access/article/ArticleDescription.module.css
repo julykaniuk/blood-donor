@@ -82,13 +82,16 @@ a:hover {
     line-height: 24px;
     color: #1A0C19;
 }
-
+.notes{
+    color: #1A0C19;
+    margin-bottom: 16px;
+}
 .geneticsImage {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    max-width: 200px;
+    max-width: 600px;
 }
 @media (max-width: 1024px) {
     .container {

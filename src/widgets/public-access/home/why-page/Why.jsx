@@ -1,5 +1,6 @@
 import styles from "./Why.module.css";
 import Button from "../../../../shared/ui/button/Button.jsx";
+import {Link} from "react-router-dom";
 
 const Section2 = () => {
     return (
@@ -11,9 +12,11 @@ const Section2 = () => {
                     рятівною для багатьох.
 
                 </p>
+                <Link to={"/why"}>
                 <Button onClick={() => console.log("Біла кнопка натиснута!")} variant="white">
                     Дізнатись більше
                 </Button>
+                </Link>
             </div>
         </div>
     );

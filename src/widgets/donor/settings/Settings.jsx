@@ -69,38 +69,38 @@ const Settings = () => {
                         <form className={styles.formSettings}>
                             <div className={styles.column}>
                                 <div className={styles.infoBox}>
-                                    <label htmlFor="first_name"><strong>Імя</strong></label>
-                                    <input type="text" id="first_name"/>
+                                    <label className={styles.settingsLabel} htmlFor="first_name"><strong>Імя</strong></label>
+                                    <input className={styles.inputField} type="text" id="first_name"/>
                                 </div>
                                 <div className={styles.infoBox}>
-                                    <label htmlFor="last_name"><strong>Прізвище</strong></label>
-                                    <input type="text" id="last_name"/>
+                                    <label className={styles.settingsLabel} htmlFor="last_name"><strong>Прізвище</strong></label>
+                                    <input className={styles.inputField} type="text" id="last_name"/>
                                 </div>
                                 <div className={styles.infoBox}>
-                                    <label htmlFor="phone"><strong>Мобільний телефон</strong></label>
-                                    <input type="text" id="phone"/>
+                                    <label className={styles.settingsLabel} htmlFor="phone"><strong>Мобільний телефон</strong></label>
+                                    <input className={styles.inputField} type="text" id="phone"/>
                                 </div>
                                 <div className={styles.infoBox}>
-                                    <label htmlFor="email"><strong>Електронна адреса</strong></label>
-                                    <input type="email" id="email"/>
+                                    <label className={styles.settingsLabel} htmlFor="email"><strong>Електронна адреса</strong></label>
+                                    <input className={styles.inputField} type="email" id="email"/>
                                 </div>
                             </div>
 
                             <div className={styles.column}>
                                 <div className={styles.infoBox}>
-                                    <label htmlFor="location"><strong>Місце проживання</strong></label>
-                                    <input type="text" id="location"/>
+                                    <label className={styles.settingsLabel} htmlFor="location"><strong>Місце проживання</strong></label>
+                                    <input className={styles.inputField} type="text" id="location"/>
                                 </div>
                                 <div className={styles.infoBox}>
-                                    <label htmlFor="sex"><strong>Стать</strong></label>
-                                    <select id="sex">
-                                        <option value="жінка">Жінка</option>
-                                        <option value="чоловік">Чоловік</option>
-                                        <option value="інше">Інше</option>
+                                    <label className={styles.settingsLabel} htmlFor="sex"><strong>Стать</strong></label>
+                                    <select className={styles.settingsSelect} id="sex">
+                                        <option className={styles.settingsOption} value="жінка">Жінка</option>
+                                        <option className={styles.settingsOption} value="чоловік">Чоловік</option>
+                                        <option className={styles.settingsOption} value="інше">Інше</option>
                                     </select>
                                 </div>
                                 <div className={styles.infoBox}>
-                                    <label htmlFor="password"><strong>Змінити пароль</strong></label>
+                                    <label className={styles.settingsLabel} htmlFor="password"><strong>Змінити пароль</strong></label>
                                     <div className={styles.passwordContainer}>
                                         <input
                                             type={passwordState.isVisible ? "text" : "password"}
@@ -114,7 +114,7 @@ const Settings = () => {
                                     </div>
                                 </div>
                                 <div className={styles.infoBox}>
-                                    <label htmlFor="confirm_password"><strong>Підтвердіть пароль</strong></label>
+                                    <label className={styles.settingsLabel} htmlFor="confirm_password"><strong>Підтвердіть пароль</strong></label>
                                     <div className={styles.passwordContainer}>
                                         <input
                                             type={confirmPasswordState.isVisible ? "text" : "password"}
@@ -142,34 +142,34 @@ const Settings = () => {
                     >
                         <form>
                             <div className={styles.infoBox}>
-                                <label htmlFor="blood_group"><strong>Група крові</strong></label>
-                                <select
+                                <label className={styles.settingsLabel}  htmlFor="blood_group"><strong>Група крові</strong></label>
+                                <select className={styles.settingsSelect}
                                     id="blood_group"
                                 >
-                                    <option value="">Оберіть групу крові</option>
-                                    <option value="0">0 (I)</option>
-                                    <option value="A">A (II)</option>
-                                    <option value="B">B (III)</option>
-                                    <option value="AB">AB (IV)</option>
+                                    <option className={styles.settingsOption} value="">Оберіть групу крові</option>
+                                    <option className={styles.settingsOption} value="0">0 (I)</option>
+                                    <option className={styles.settingsOption} value="A">A (II)</option>
+                                    <option className={styles.settingsOption} value="B">B (III)</option>
+                                    <option className={styles.settingsOption} value="AB">AB (IV)</option>
                                 </select>
                             </div>
                             <div className={styles.infoBox}>
-                                <label htmlFor="rhesus_factor"><strong>Резус-фактор</strong></label>
-                                <select
+                                <label className={styles.settingsLabel} htmlFor="rhesus_factor"><strong>Резус-фактор</strong></label>
+                                <select className={styles.settingsSelect}
                                     id="rhesus_factor"
                                 >
-                                    <option value="">Оберіть резус-фактор</option>
-                                    <option value="+">Позитивний (+)</option>
-                                    <option value="-">Негативний (-)</option>
+                                    <option className={styles.settingsOption} value="">Оберіть резус-фактор</option>
+                                    <option className={styles.settingsOption} value="+">Позитивний (+)</option>
+                                    <option className={styles.settingsOption} value="-">Негативний (-)</option>
                                 </select>
                             </div>
                             <div className={styles.infoBox}>
                                 <strong>Типи донaції</strong>
                                 <div className={styles.toggleGroup}>
-                                    <label>Цільна кров <input type="checkbox"/></label>
-                                    <label>Тромбоцити <input type="checkbox"/></label>
-                                    <label>Плазма <input type="checkbox"/></label>
-                                    <label>Гранулоцити <input type="checkbox"/></label>
+                                    <label className={styles.settingsLabel} >Цільна кров <input type="checkbox"/></label>
+                                    <label className={styles.settingsLabel} >Тромбоцити <input type="checkbox"/></label>
+                                    <label className={styles.settingsLabel} >Плазма <input type="checkbox"/></label>
+                                    <label className={styles.settingsLabel} >Гранулоцити <input type="checkbox"/></label>
                                 </div>
                             </div>
                             <Button onClick={() => console.log('Кнопка натиснута!')}>

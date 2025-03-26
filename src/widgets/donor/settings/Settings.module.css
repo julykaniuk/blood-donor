@@ -125,28 +125,28 @@
 
 .formSettings {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Дві рівні колонки */
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
 }
-form label {
+.settingsLabel{
     display: block;
     font-weight: bold;
     margin-top: 4px;
 }
 
-form input[type="text"],
-form input[type="email"],
-form input[type="password"] {
+.inputField{
     width: 100%;
     padding: 4px;
-    border: none;
     outline: none;
     background: transparent;
     font-size: 16px;
+    border: 2px solid #8e8c8c;
+    border-radius: 16px;
 }
 .passwordContainer {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 10px;
 }
 
@@ -156,10 +156,13 @@ form input[type="password"] {
     font-size: 16px;
     outline: none;
     background: transparent;
+    border: 2px solid #8e8c8c;
+    border-radius: 16px;
 }
 
 .passwordContainer button {
-    padding: 5px 10px;
+    padding: 5px 5px;
+    margin-bottom: 16px;
     background-color: transparent;
     cursor: pointer;
     font-size: 16px;
@@ -185,10 +188,11 @@ input[type="checkbox"]:hover {
     }
 }
 
-select {
+.settingsSelect {
     width: 100%;
     padding: 8px;
-    font-size: 16px;
+    font-size: 14px;
+    font-family: 'Lexend', sans-serif;
     border-radius: 10px;
     background: white;
     outline: none;
@@ -197,7 +201,8 @@ select {
 }
 
 
-select option {
+
+.settingsOption {
     background: white;
     color: #333;
     font-size: 16px;

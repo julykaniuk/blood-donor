@@ -1,6 +1,6 @@
 .formContainer {
     max-width: 1200px;
-    margin: 20px auto;
+    margin: 30px auto;
     padding: 20px;
     text-align: center;
 }
@@ -27,16 +27,14 @@
     margin: 5px 10px;
 }
 
-label {
+.formLabel {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
     color: #333;
 }
 
-input,
-select,
-textarea {
+.formElement {
     width: 100%;
     padding: 10px;
     margin-top: 5px;
@@ -45,8 +43,13 @@ textarea {
     box-sizing: border-box;
 }
 
-textarea {
-    resize: none;
+.formElement1 {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
 
 .radioGroup {
